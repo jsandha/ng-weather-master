@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "timestamp": 1659908508628,
+  "index": "/https://jsandha.github.io/ng-weather-master/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/https://jsandha.github.io/ng-weather-master/favicon.ico",
+        "/https://jsandha.github.io/ng-weather-master/index.html",
+        "/https://jsandha.github.io/ng-weather-master/main.c74095322fc4b7e060fd.js",
+        "/https://jsandha.github.io/ng-weather-master/polyfills-es5.4a98135ec0f9b386cb0c.js",
+        "/https://jsandha.github.io/ng-weather-master/polyfills.f33759389c2a3f6325b7.js",
+        "/https://jsandha.github.io/ng-weather-master/runtime.689ba4fd6cadb82c1ac2.js",
+        "/https://jsandha.github.io/ng-weather-master/styles.bb34d8587cff4ee5b307.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/https://jsandha.github.io/ng-weather-master/assets/country.list.json",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-128x128.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-144x144.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-152x152.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-192x192.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-384x384.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-512x512.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-72x72.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-96x96.png",
+        "/https://jsandha.github.io/ng-weather-master/assets/weather.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "WeatherAPI",
+      "patterns": [
+        "http:\\/\\/api\\.openweathermap\\.org\\/data\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxAge": 21600000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/https://jsandha.github.io/ng-weather-master/assets/country.list.json": "c6b710ce55af3cdbbd5309717dc2a4b08ec845f6",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/https://jsandha.github.io/ng-weather-master/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/https://jsandha.github.io/ng-weather-master/assets/weather.json": "5ce53747ac7b830cab8740514bba77459926438a",
+    "/https://jsandha.github.io/ng-weather-master/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/https://jsandha.github.io/ng-weather-master/index.html": "7e11dc380853cb972986aa88dd7710341ae06cf9",
+    "/https://jsandha.github.io/ng-weather-master/main.c74095322fc4b7e060fd.js": "6795dd88fe868d7f6cd843e0bd8e3bd96b9a5a5a",
+    "/https://jsandha.github.io/ng-weather-master/polyfills-es5.4a98135ec0f9b386cb0c.js": "3f99e728e4d794517bc3eb251b694d1d871ff2b5",
+    "/https://jsandha.github.io/ng-weather-master/polyfills.f33759389c2a3f6325b7.js": "7f9ce26c29396db7bb25de5bc32b63364719d856",
+    "/https://jsandha.github.io/ng-weather-master/runtime.689ba4fd6cadb82c1ac2.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/https://jsandha.github.io/ng-weather-master/styles.bb34d8587cff4ee5b307.css": "e1a7899c3f01c48fb73a14d4c3fd728e675cc36a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
