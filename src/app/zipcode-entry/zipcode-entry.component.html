@@ -1,0 +1,47 @@
+<form [formGroup]="contactForm" (ngSubmit)="addLocation()">
+  <div class="autocomplete">
+    <label>Select Country</label>
+    <input
+      class="form-control"
+      aria-label="country"
+      id="country"
+      type="text"
+      name="country"
+      placeholder="Country"
+      formControlName="country"
+      #val
+    />
+    <ul
+      *ngIf="val.value != '' && !isCountrySelected"
+      id="myInputautocomplete-list"
+      class="autocomplete-items"
+    >
+      <li
+        *ngFor="let country of filteredList"
+        (click)="setCountry(country)"
+        (keyup.enter)="setCountry(country)"
+      >
+        <strong>{{ country.name.substr(0, val.value.length) }}</strong
+        >{{ country.name.substr(val.value.length) }}
+      </li>
+    </ul>
+  </div>
+  <div>
+    <label for="firstname">Enter a zipcode:</label>
+    <input
+      type="text"
+      id="zipcode"
+      name="zipcode"
+      aria-label="zipcode"
+      formControlName="zipcode"
+      class="form-control"
+      placeholder="Zipcode"
+    />
+  </div>
+  <br />
+  <app-load-btn
+    [isFilled]="contactForm.valid"
+    (ldBtn)="addLocation()"
+  ></app-load-btn>
+</form>
+<br />

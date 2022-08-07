@@ -1,0 +1,8 @@
+<button
+  class="btn"
+  [class]="btnClicked ? 'btn-success' : 'btn-primary'"
+  (click)="buttonClicked()"
+  [disabled]="btnClicked"
+>
+  {{ btnClicked ? btnTxt : "Add location" }}
+</button>
